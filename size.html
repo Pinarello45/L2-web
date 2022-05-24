@@ -1,0 +1,53 @@
+<!doctype html>
+
+<head>
+    <title>UpSkate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function calulate() {
+            /* The Calculator */
+            var data = document.getElementById("sizeData").value;
+            if (data <= 10) {
+                document.getElementById('answer').innerHTML =
+                    alert("your size is small");
+            }
+
+            if (data >= 11 && data < 20) {
+                document.getElementById('answer').innerHTML =
+                    alert("your size is meduim");
+            }
+
+            if (data >= 21 && data < 30) {
+                document.getElementById('answer').innerHTML =
+                    alert("your size is large");
+            } else {
+                document.getElementById('answer').innerHTML =
+                    alert("you dont fit any size");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="strip"></div>
+        <img class="logo" src="images/logo.png">
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="shop.html">Shop</a> |
+            <a href="size.html">Size</a>
+            <h1></h1>
+        </nav>
+    </header>
+    <section>
+        <h1>Size</h1>
+        <p>this is the sizing page. </p>
+                <div class="cal">
+            <input type="name" name="size" id="sizeData">
+            <button type="submit" onclick="calulate()">Submit</button>
+            <p id="awswer"></p>
+        </div>
+    </section>
+
+</body>
