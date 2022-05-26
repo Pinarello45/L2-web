@@ -9,20 +9,20 @@
             var data = document.getElementById("sizeData").value;
             if (data <= 10) {
                 document.getElementById('answer').innerHTML =
-                    alert("your size is small");
+                    alert("your size is small"); /*small size pop up*/
             }
 
             if (data >= 11 && data < 20) {
                 document.getElementById('answer').innerHTML =
-                    alert("your size is meduim");
+                    alert("your size is meduim"); /*Medium size pop up*/
             }
 
             if (data >= 21 && data < 30) {
                 document.getElementById('answer').innerHTML =
-                    alert("your size is large");
+                    alert("your size is large"); /*large size pop up*/
             } else {
                 document.getElementById('answer').innerHTML =
-                    alert("you dont fit any size");
+                    alert("you dont fit any size"); /*too big size pop up*/
             }
 
         }
@@ -32,12 +32,12 @@
 <body>
     <header>
         <div class="strip"></div>
-        <img class="logo" src="images/logo.png">
+        <img class="logo" alt="dumb" src="images/logo.png"> <!--logo-->
         <nav>
             <a href="index.html">Home</a> |
             <a href="shop.html">Shop</a> |
             <a href="size.html">Size</a>
-            <h1></h1>
+            <h1></h1>  <!--links-->
         </nav>
     </header>
     <section>
@@ -46,7 +46,7 @@
                 <div class="cal">
             <input type="name" name="size" id="sizeData">
             <button type="submit" onclick="calulate()">Submit</button>
-            <p id="awswer"></p>
+            <p id="awswer"></p> <!--box for button-->
         </div>
     </section>
 
